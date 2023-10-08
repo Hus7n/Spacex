@@ -24,7 +24,7 @@ ul {
 }
 
 /*header*/
-.main-header {
+.main-header,.main-headerF {
     position: fixed;
     top: 0;
     left: 0;
@@ -35,11 +35,11 @@ ul {
     align-items: center;
     text-transform: uppercase;
     height: 100px;
-    /* z-index: index 2; */
 }
 
+
 /*logo*/
-.logo {
+.logo,.logoF {
     position: relative;
     z-index: 1000;
     width: 200px;
@@ -47,31 +47,32 @@ ul {
     margin-left: 2vw;
 }
 
-.logo img {
+
+.logo img, .logoF img{
     width: 110%;
     display: block;
     height: auto;
 }
 
 /*menu*/
-.desktop-main-menu {
+.desktop-main-menu,.desktop-main-menuF {
     margin-right: 50px;
 }
 
-.desktop-main-menu ul {
+.desktop-main-menu ul,.desktop-main-menuF ul {
     display: flex;
 }
 
 /*space bw li */
-.desktop-main-menu ul li {
+.desktop-main-menu ul li,.desktop-main-menu ul li {
     position: relative;
     margin-right: 20px;
     padding-bottom: 2px;
 }
 
 /*bottom border*/
-.desktop-main-menu ul li a::after {
-    content: '';
+.desktop-main-menu ul li a::after,.desktop-main-menuF ul li a::after {
+    content:' ';
     position: absolute;
     bottom: 0;
     left: 0;
@@ -90,11 +91,18 @@ section{
     background-image: url("../img/B.jpg")
 }
 
-.section-inner{
+.section-inner,.section-innerF{
     position: absolute;
     bottom: 100px;
     left: 25px;
     max-width: 560px;
+}
+
+.section-innerF h1{
+    font-size: 100px;
+    color: #fff;
+    bottom: 5px;
+    animation: fadeInUp 0.5 ease-in-out 0.4s;
 }
 
 .section-inner h4{
@@ -158,6 +166,10 @@ background-image: url("../img/ses.jpg");
 
 .section-d {
 background-image: url("../img/fm15.jpg");
+ }
+
+ .section-f{
+    background-image: url("../img/falcon.jpg");
  }
 
 /* footer */
