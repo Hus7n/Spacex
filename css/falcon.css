@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital@1&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Familjen Grotesk', sans-serif;
+    background: #fff;
+    color: #000;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.section-f{
+    background-image: url("../img/Earth.png");
+}
+.main-headerF {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    height: 100px;
+    /* z-index: index 2; */
+}
+
+/*logo*/
+.logoF {
+    position: relative;
+    z-index: 1000;
+    width: 200px;
+    height: auto;
+    margin-left: 2vw;
+}
+
+.logo img {
+    width: 110%;
+    display: block;
+    height: auto;
+}

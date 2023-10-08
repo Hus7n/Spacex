@@ -1,113 +1,123 @@
 @import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital@1&display=swap');
 
-*,*::before ,*::after{
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family:'Familjen Grotesk', sans-serif;
-    background: #fff; 
-    color: #000;   
+
+body {
+    font-family: 'Familjen Grotesk', sans-serif;
+    background: #fff;
+    color: #000;
 }
 
-a{
+a {
     color: #000;
     text-decoration: none;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
 /*header*/
-.main-header{
+.main-header {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1000;
     width: 100%;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     text-transform: uppercase;
     height: 100px;
-    z-index: index 1;
+    /* z-index: index 2; */
 }
- /*logo*/
- .logo{
+
+/*logo*/
+.logo {
+    position: relative;
+    z-index: 1000;
     width: 200px;
     height: auto;
-    margin-left: 7vw;
- }
-.logo img{
+    margin-left: 2vw;
+}
+
+.logo img {
     width: 110%;
     display: block;
     height: auto;
 }
 
 /*menu*/
-.desktop-main-menu{
+.desktop-main-menu {
     margin-right: 50px;
 }
 
-.desktop-main-menu ul{
+.desktop-main-menu ul {
     display: flex;
 }
 
 /*space bw li */
-.desktop-main-menu ul li  {
-position: relative;
-margin-right: 20px;
-padding-bottom: 2px;
+.desktop-main-menu ul li {
+    position: relative;
+    margin-right: 20px;
+    padding-bottom: 2px;
 }
 
 /*bottom border*/
 .desktop-main-menu ul li a::after {
-    content:'';
+    content: '';
     position: absolute;
     bottom: 0;
-    left: 0; 
+    left: 0;
     width: 100%;
     height: 1px;
-    background:#fff;
+    background: #fff;
 }
-
-/* background vid A */
-.bg-video {
- position:fixed;
-height:100vh;
-width: 100vw;
-object-fit: cover;
+/* section */
+section{
+    position: relative;
+    height: 100vh;
+    background-position: center center;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    text-transform: uppercase;
+    background-image: url("../img/B.jpg")
 }
 
 .section-inner{
-   position: absolute;
-   bottom: 100px;
-   left: 150px;
-   max-width: 560px; 
+    position: absolute;
+    bottom: 100px;
+    left: 25px;
+    max-width: 560px;
 }
 
 .section-inner h4{
     font-size: 22px;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
     font-weight: 300;
-    color: #000;
-    animation: fadeInUp 0.5s ease-in-out 0.4s
+    color: #fff;
+    animation: fadeInup 0.5s ease-in-out 0.4s;
 }
 
 .section-inner h2{
     font-size: 50px;
     font-weight: 700;
-    margin-bottom: 10px;
-    color: #000;
-    animation: fadeInUp 0.5s ease-in-out 0.2s;
+    color: #fff;
+    animation: fadeInup 0.5s ease-in-out 0.2s;
 }
 
-@keyframes fadeInUp{
+@keyframes fadeInUp {
     0%{
         opacity: 0;
         transform: translateY(140px);
     }
+
     100%{
         opacity: 1;
         transform: translateY(0);
@@ -115,24 +125,59 @@ object-fit: cover;
 }
 
 .learn{
-  color: #000;  
-  font-size: larger;
+    color: #fff;
+    font-size: larger;
 }
 
-.btn{
-    position:relative;
+.btn1,.btn2,.btn3,.btn4 {
+    position: relative;
     display: inline-block;
     cursor: pointer;
     text-align: center;
     text-transform: uppercase;
     min-width: 130px;
     padding: 15px 50px;
-    margin: top 10px; 
+    margin-top: 10px;
     border: 2px solid #fff;
     font-weight: bold;
     z-index: 2;
 }
 
-.btn:hover span {
-    color: #fff;
+.btn1:hover span,.btn2:hover span,.btn3:hover span,.btn4:hover span{
+    color: #000;
 }
+
+/* sec image */
+.section-b {
+background-image: url("../img/c.jpg");
+}
+
+.section-c {
+background-image: url("../img/ses.jpg");
+ }
+
+.section-d {
+background-image: url("../img/fm15.jpg");
+ }
+
+/* footer */
+footer{
+    position: relative;
+    padding: 55px 0;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+footer ul li{
+    margin-right: 30px;
+    text-transform: uppercase;
+}
+
+
+
+
