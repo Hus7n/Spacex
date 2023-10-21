@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script src="js/script.js"></script>
     <title>Falcon 9</title>
 </head>
@@ -14,21 +16,50 @@
             </a>
         </div>
         <nav class="desktop-main-menuF">
-            <ul>
+            <ul class="falcon-nav">
                 <li><a href="falcon.html"> Falcon 9 </a></li>
-                <li><a href="dragon.html"> Dragon </a></li>
-                <li><a href="#"> Starship </a></li>
-                <li><a href="#"> Human Space Flight </a></li>
-                <li><a href="#"> Rideshare </a></li>
+                <li><a href="starlink.html"> Starship </a></li>
+                <li><a href="#"> Gallery </a></li>
+                <li><a href="#"> Home </a></li>
             </ul>
         </nav>
     </header>
     <section class="section-f">
+        <div class="back"><button id="myb" title="Go-back" onclick="window.history.back()"><span class="material-symbols-outlined">
+            arrow_back
+            </span></button></div>
         <div class="section-innerF ">
             <h1>Falcon 9</h1>
+            <p>Falcon 9 is a reusable, two-stage rocket designed and manufactured by SpaceX for the reliable and safe transport of people and payloads into Earth orbit and beyond. Falcon 9 is the world’s first orbital class reusable rocket. Reusability allows SpaceX to refly the most expensive parts of the rocket, which in turn drives down the cost of space access.</p>
             </div>
         </div>
+      
+</div>
+</div>
     </section> 
-    
+    <!-- f info -->
+    <section class="section-i">
+        <div class="section-innerp">
+            
+        </div> 
+        <div class="pa">
+        </div>
+        <div class="stats">
+            <div>
+                <span class="counter">3</span>
+                <h4>Total Launches</h4>
+            </div>
+            <div>
+                <span class="counter">5</span>
+                <h4>Total Landing</h4>
+            </div>
+            <div>
+                <span class="counter">7</span>
+                <h4>Total Reflights</h4>
+            </div>
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="material-symbols-outlined">
+                arrow_upward
+                </span></button>
+    </section>
 </body>
 </html>
